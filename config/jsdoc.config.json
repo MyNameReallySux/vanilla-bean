@@ -1,0 +1,24 @@
+{
+    "opts": {
+        "destination": "./docs/",
+        "readme": "./README.md",
+        "template": "./node_modules/minami",
+        "private": true,
+        "sort": false
+    },
+    "plugins": [],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["src/VanillaMocha.js"],
+        "includePattern": ".+\\.js(doc|x)?$"
+    },
+    "sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "@beautiful-code/vanilla-mocha",
+  "version": "0.0.1",
+  "description": "One Paragraph of project description goes here",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "babel -w ./src --out-dir ./dist",
+    "build": "babel ./src --out-dir ./dist",
+    "generate:docs": "jsdoc -c ./config/jsdoc.config.json",
+    "test": "_mocha",
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "author": "Chris Coppola <mynamereallysux@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@beautiful-code/object-utils": "0.0.6",
+    "@beautiful-code/string-utils": "^0.1.7",
+    "@beautiful-code/type-utils": "^0.1.6",
+    "babel-polyfill": "^6.26.0",
+    "colors": "^1.1.2",
+    "ink-docstrap": "^1.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "babel-watch": "^2.0.7",
+    "chai": "^4.1.2",
+    "eslint": "^4.13.1",
+    "minami": "git://github.com/mynamereallysux/minami.git#sort-data",
+    "mocha": "^4.1.0",
+    "webpack": "^3.10.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyNameReallySux/vanilla-mocha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MyNameReallySux/vanilla-mocha/issues"
+  },
+  "homepage": "https://github.com/MyNameReallySux/vanilla-mocha#readme"
+}
