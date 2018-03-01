@@ -17,7 +17,7 @@
     "dist"
   ],
   "dependencies": {
-    "@beautiful-code/object-utils": "0.0.6",
+    "@beautiful-code/object-utils": "^0.2.1",
     "@beautiful-code/string-utils": "^0.1.7",
     "@beautiful-code/type-utils": "^0.1.6",
     "babel-polyfill": "^6.26.0",
@@ -36,7 +36,7 @@
     "chai": "^4.1.2",
     "eslint": "^4.13.1",
     "minami": "git://github.com/mynamereallysux/minami.git#sort-data",
-    "mocha": "^4.1.0",
+    "mocha": "^5.0.1",
     "webpack": "^3.10.0"
   },
   "directories": {

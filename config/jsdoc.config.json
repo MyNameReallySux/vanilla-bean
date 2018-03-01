@@ -9,7 +9,7 @@
     "plugins": [],
     "recurseDepth": 10,
     "source": {
-        "include": ["src/VanillaMocha.js"],
+        "include": ["src/VanillaBean.js"],
         "includePattern": ".+\\.js(doc|x)?$"
     },
     "sourceType": "module",
