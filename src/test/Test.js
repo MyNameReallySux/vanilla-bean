@@ -54,17 +54,17 @@ export class Test {
                         ? initial.map((value) => runner(value))
                         : runner(initial)
                     this.validateTest(result, expected)
-                } catch(err){
-                    error(err)
-                    this.validateTest(err, expected)
+                } catch({ name, message }){
+                    error(name, ':', message)
+                    this.validateTest({ name, message }, expected)
                 }
             } else if(expectedParameters == 2){
                 // Handle Callback Based Test
                 runner(initial, (result) => {
                     this.validateTest(result, expected)
-                }, (err) => {
-                    error(err)
-                    this.validateTest(err, expected)
+                }, ({ name, message }) => {
+                    error(name, ':', message)
+                    this.validateTest({ name, message }, expected)
                 })
             }
         }

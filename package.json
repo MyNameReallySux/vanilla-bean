@@ -1,6 +1,6 @@
 {
   "name": "@beautiful-code/vanilla-bean",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "One Paragraph of project description goes here",
   "main": "dist/index.js",
   "scripts": {
