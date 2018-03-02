@@ -2,6 +2,8 @@ import { toSnakeCase } from '@beautiful-code/string-utils'
 import { isArray, isObject, isFunction } from '@beautiful-code/type-utils'
 import { clean, exclude, extend } from '@beautiful-code/object-utils'
 
+import { print, debug, error } from './lib/ConsoleUtils'
+
 import { Test } from './Test'
 
 export class TestSet {

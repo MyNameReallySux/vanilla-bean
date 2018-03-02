@@ -11,7 +11,7 @@ export class MochaCompat {
 
     static Runners = {
         testPassThrough: (test) => test,
-        testFunction: (func) => (test) => func(test),
+        testFunction: (func) => (...test) => func(...test),
         testCallback: (func) => (test, callback) => func(test, callback)
     }
 

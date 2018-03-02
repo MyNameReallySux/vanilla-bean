@@ -1,6 +1,8 @@
 import { isArray, isObject, isFunction } from '@beautiful-code/type-utils'
 import { clean, exclude, extend } from '@beautiful-code/object-utils'
 
+import { print, debug, error } from './lib/ConsoleUtils'
+
 export class Test {
     static setMochaFunctions = (it, expect) => {
         Test.it = it
